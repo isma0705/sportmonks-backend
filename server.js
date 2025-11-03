@@ -7,6 +7,7 @@ app.use(cors());
 
 const TOKEN = const TOKEN = process.env.SPORTMONKS_TOKEN;
 
+
 app.get('/livescores', async (req, res) => {
   try {
     const apiUrl = `https://api.sportmonks.com/v3/football/livescores/inplay?include=participants;scores;periods;events;league.country;round&api_token=${TOKEN}`;
