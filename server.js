@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 
-const TOKEN = ' process.env.SPORTMONKS_TOKEN';
+const TOKEN = const TOKEN = process.env.SPORTMONKS_TOKEN;
 
 app.get('/livescores', async (req, res) => {
   try {
